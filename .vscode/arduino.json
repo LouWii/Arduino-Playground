@@ -1,4 +1,0 @@
-{
-    "board": "arduino:avr:leonardo",
-    "port": "COM6"
-}
