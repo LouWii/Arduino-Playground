@@ -8,10 +8,10 @@
 // Might cause problems if other libs or code uses attachInterrupt()
 #define ENCODER_OPTIMIZE_INTERRUPTS
 
-Encoder encoder(1, 0);
+Encoder encoder(0, 1);
 
 long encod = 0;
-const int step = 1;
+const int step = 2;
 
 void setup() {
   Serial.begin(9600);

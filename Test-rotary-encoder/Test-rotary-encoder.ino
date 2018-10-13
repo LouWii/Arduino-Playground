@@ -20,15 +20,10 @@ void loop() {
   newEnc = encoder.read();
   if ( abs((encod - newEnc)) == step ) {
 
-    // Control sound?
     if (encod < newEnc) {
-      Keyboard.begin();
-      Keyboard.print("VolUp");
-      Keyboard.end();
+      // Going up
     } else {
-      Keyboard.begin();
-      Keyboard.print("VolDn");
-      Keyboard.end();
+      // Going down
     }
     encod = newEnc;
     Serial.println(newEnc);
