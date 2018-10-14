@@ -6,7 +6,7 @@
 
 /*
   This is an example of the "RotaryEncoder" class of the MIDI_controller library.
-  Connect the A and B pins of the encoder to 2 interrupt pins (2 and 3). 
+  Connect the A and B pins of the encoder to 2 interrupt pins (0 and 1).
   It's recommended to use 100nF capacitors between the A and B pins and ground (hardware debounce).
   Connect the common (C) pin to the ground. Pull-up resistors are not necessary, since the internal ones will be used.
   Map the control change message 0x14 to the right control in your DJ or DAW software, 
@@ -36,7 +36,8 @@ const uint8_t Channel = 1;       // MIDI channel 1
 const uint8_t Controller = 0x14; // MIDI Control Change controller number https://www.midi.org/specifications/item/table-3-control-change-messages-data-bytes-2
 const int speedMultiply = 1; // No change in speed of the encoder (number of steps is multiplied by 1)
 
-RotaryEncoder encoder(1, 0, Controller, Channel, speedMultiply, NORMAL_ENCODER, TWOS_COMPLEMENT);
+// If the control is reversed, inverse the 2 pins 0 and 1 here or directly on your board
+RotaryEncoder encoder(0, 1, Controller, Channel, speedMultiply, NORMAL_ENCODER, TWOS_COMPLEMENT);
 
 // Instantiate a MIDI interface that sends debug messages to the USB Serial port (Serial Monitor)
 //USBDebugMIDI_Interface midiInterface(115200);
