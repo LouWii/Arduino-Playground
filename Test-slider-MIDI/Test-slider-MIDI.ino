@@ -3,12 +3,14 @@
 #include <MIDI_Controller.h>
 
 Analog potentiometer(A0, MIDI_CC::Channel_Volume, 1);
-// Analog High Res seems to be too sensitive for Lightroom/MIDI2LR
-// AnalogHiRes potentiometer(A0, 1);
-
 
 // Instantiate a MIDI interface that sends debug messages to the USB Serial port (Serial Monitor)
 USBDebugMIDI_Interface midiInterface(115200);
+// Moving the slider up/down will send data over Serial
+// In the serial console, you should see something like (0x0 is the minimum value, 0x7F is the max)
+//  Control Change		Channel: 1	Data 1: 0x7	Data 2: 0x0
+//  Control Change		Channel: 1	Data 1: 0x7	Data 2: 0x7F
+
 
 void setup() {
 
