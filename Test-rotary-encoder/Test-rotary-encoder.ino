@@ -8,7 +8,7 @@
 // If the control is reversed, inverse the 2 pins here or directly on your board
 Encoder encoder(0, 1);
 
-const int debounceDelay = 20;
+const int debounceDelay = 40;
 
 long encoderCurrentValue;
 long encoderLastChange = 0;
@@ -33,8 +33,10 @@ void loop() {
     if (currentTime - encoderLastChange > debounceDelay) {
       if (encoderCurrentValue < encoderNewValue) {
         // Going up
+        Serial.println("Up!");
       } else {
         // Going down
+        Serial.println("Down!");
       }
       Serial.print("Time: ");
       Serial.print(currentTime);
