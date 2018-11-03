@@ -11,7 +11,7 @@ const int displayDelay = 3000;
 long lastDisplay = 0;
 
 // This verifies that the library has been changed properly for the screen size
-#if (SSD1306_LCDHEIGHT != 32)
+#if (SSD1306_LCDHEIGHT != 64)
 #error("Height incorrect, please fix Adafruit_SSD1306.h!");
 #endif
 
@@ -40,9 +40,10 @@ void loop() {
     } else if (textDisplayed == 1) {
       oled.clearDisplay();
       oled.setTextSize(2);
-      oled.println("Scrolling?");
-      oled.startscrollright(0x00, 0x0F);
+      oled.println("Scrolling? ");
+      // Interestingly, calling .display() after the startscrollleft is making the scrolling effect all buggy
       oled.display();
+      oled.startscrollleft(0x00, 0x0F);
 
       textDisplayed = 2;
       lastDisplay = millis();
@@ -51,10 +52,12 @@ void loop() {
       oled.clearDisplay();
       oled.setTextSize(1);
       // Backslash is "protecting" the next character, we need 2 backslach to display 1
-      oled.println(" \\\\\\||||||////");
-      oled.println("  \\\\  ~ ~  //");
-      oled.println("   (  @ @  )");
-      oled.println("_oOOo-(_)-oOOo_");
+      oled.println("");
+      oled.println("");
+      oled.println("   \\\\\\||||||////");
+      oled.println("    \\\\  ~ ~  //");
+      oled.println("     (  @ @  )");
+      oled.println("___oOOo-(_)-oOOo___");
       oled.display();
 
       textDisplayed = 3;
