@@ -45,8 +45,9 @@ void loop() {
       oled.stopscroll();
       oled.clearDisplay();
       oled.setTextSize(1);
-      oled.println(" \\\||||||////");
-      oled.println("  \\  ~ ~  //");
+      // Backslash is "protecting" the next character, we need 2 backslach to display 1
+      oled.println(" \\\\\\||||||////");
+      oled.println("  \\\\  ~ ~  //");
       oled.println("   (  @ @  )");
       oled.println("_oOOo-(_)-oOOo_");
       oled.display();
