@@ -89,7 +89,6 @@ void loop() {
       oled.clear();
       oled.set_contrast(30);
       // Characters available in the library are limited
-      // oled.setTextSize(1);
       oled.println("Hello LouWii!");
       oled.println("It's me, Pro Micro!");
       oled.println("=]");
@@ -110,7 +109,6 @@ void loop() {
       // We have to stop the scrolling that way, otherwise it messes up the display
       oled.set_scrolling(OLED::NO_SCROLLING, 0, 0);
       oled.clear();
-      // oled.setTextSize(1);
       // Backslash is "protecting" the next character, we need 2 backslach to display 1
       // The library doesn't display backslashes, displays a white rectangle instead
       oled.println("");
