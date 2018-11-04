@@ -8,7 +8,7 @@ This test uses 2 libraries from Adafruit:
 * [Adafruit_SSD1306](https://github.com/adafruit/Adafruit_SSD1306)
 * [Adafruit-GFX-Library](https://github.com/adafruit/Adafruit-GFX-Library) (dependency of the above one)
 
-**/!\\** You need to modify the `Adafruit_SSD1306.h` file that should be stored in `My Documents\Arduino\libraries\Adafruit_SSD1306`. Around line 73 of that file, there are different options for screen sizes. Make sure that `#define SSD1306_128_32` is uncommented, and the other ones are commented out.
+**NOTE:** You need to modify the `Adafruit_SSD1306.h` file that should be stored in `My Documents\Arduino\libraries\Adafruit_SSD1306`. Around line 73 of that file, there are different options for screen sizes. Make sure that `#define SSD1306_128_32` is uncommented, and the other ones are commented out.
 
 Those libraries are quite heavy, unfortunately, but they allow you to do a lot of different things. The big downside here is the amount of dynamic memory that's used. There are other ones too, that are more optmized and use less memory.
 
