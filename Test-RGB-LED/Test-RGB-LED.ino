@@ -3,14 +3,14 @@
 // Resistors can be from 270 Ohm up to 1 kOhm (the highest value, the lowest the LED will be
 
 // Leonardo
-//const int redPin = 10;
-//const int greenPin = 11;
-//const int bluePin = 12;
+const int redPin = 9;
+const int greenPin = 10;
+const int bluePin = 11;
 
 // Pro Micro
-const int redPin = 5;
-const int greenPin = 6;
-const int bluePin = 9;
+//const int redPin = 5;
+//const int greenPin = 6;
+//const int bluePin = 9;
 
 // Common CATHODE RGB LED needs its CATHODE pin to be connected to GND
 // Common ANODE RGB LED needs its ANODE pin to be connected to VCC (+5V)
