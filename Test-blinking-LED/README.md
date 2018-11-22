@@ -1,6 +1,6 @@
-# RGB LED test
+# Blinking LED
 
-It's possible and very easy to power an RGB LED from an Arduino, and control its color. All Arduinos should be capable of doing so, just make sure you use PWM pins.
+We need a resistor to avoid burning the LED. 
 
 ## Schema
 
