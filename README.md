@@ -22,6 +22,12 @@ This could probably be improved though. Creating separate tests: text test, a dr
 * SSD1306Ascii Avr: **6128 bytes** (21%) of program space used, **307 bytes** (11%) of dynamic memory - Text only, has 40+ fonts.
 * u8g2: **17338 bytes** (60%) of program space used, **899 bytes** (35%) of dynamic memory - Can draw shapes, bitmap and text. Has a lot of [features](https://github.com/olikraus/u8g2/wiki/u8g2reference). Has a ton of different fonts with different sizes.
 
+## Links
+
+* [Official Arduino Projects Hub - ton of small projects using arduinos](https://create.arduino.cc/projecthub)
+* [Arduino Playground - Tons of code example - not maintained anymore](https://playground.arduino.cc)
+* [Fritzing - Software to create and share Arduino projects prototypes](http://fritzing.org)
+
 ## License
 
 GNU GPLv3 copyright (c) LouWii
