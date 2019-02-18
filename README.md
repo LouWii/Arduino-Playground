@@ -27,6 +27,8 @@ This could probably be improved though. Creating separate tests: text test, a dr
 * [Official Arduino Projects Hub - ton of small projects using arduinos](https://create.arduino.cc/projecthub)
 * [Arduino Playground - Tons of code example - not maintained anymore](https://playground.arduino.cc)
 * [Fritzing - Software to create and share Arduino projects prototypes](http://fritzing.org)
+* [Sparkfun - Tons of modules for Arduinos and libraries!](https://www.sparkfun.com/categories)
+* [Adafruit - Modules for Arduinos and Raspberry Pi](https://www.adafruit.com/)
 
 ## License
 
