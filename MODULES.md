@@ -17,7 +17,7 @@ I/O expanders allow you to add more pins to the Arduino (12, 16 and more), while
 * I2C interface
 * 16 channels (digital in/out) and **PWM**
 * Not that cheap ($4-5)
-* 3.3V (GPIO are 5V tolerant)
+* **3.3V** max (GPIO are 5V tolerant)
 * 4 possible addresses (*0x3E*, *0x3F*, *0x70*, *0x71*) - depends on the breakout board
 
 #### Libraries
