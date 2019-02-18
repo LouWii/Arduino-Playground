@@ -6,7 +6,7 @@
 // #define ENCODER_OPTIMIZE_INTERRUPTS
 
 // If the control is reversed, inverse the 2 pins here or directly on your board
-Encoder encoder1(10, 16);
+Encoder encoder1(9, 10);
 Encoder encoder2(0, 1);
 
 const int debounceDelay = 40;
