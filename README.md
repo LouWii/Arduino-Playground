@@ -8,6 +8,10 @@ I keep all of my experiments here for my future self.
 
 Just in case I forgot everything, I've included schematics for each of my experiments, as an image, but I also attached the Fritzing file as well. [Frizing](http://www.fritzing.org/) is an open source hardware initiative, and they made a really nice and [open source software](https://github.com/fritzing/fritzing-app) to create electronic schematics.
 
+## Arduino Modules
+
+[Read more](MODULES.md)
+
 ## Comparison between Arduino display libraries
 
 I made some tests on an SSD1306 display using different libraries. Display libraries are often quite heavy and can eat up a lot of program space and RAM, and that can be a problem if your project is complex. I tried to stay consistent in my tests, with the same structure and logic.
