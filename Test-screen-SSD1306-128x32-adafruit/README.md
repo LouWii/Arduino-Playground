@@ -2,6 +2,12 @@
 
 To learn more on OLED display (how to wire it), check the [README](../Test-screen-SSD1306-128x64-adafruit/README.md) in the `Test-screen-SSD1306-128x64-adafruit` folder
 
+## Schema
+
+![Schema](schema.png)
+
+Note: The OLED screen is not present by default in Fritzing. Import it from the `OLED 128x32 I2C Monochrome Display.fzpz` file in this directory.
+
 ## Code
 
 This test uses 2 libraries from Adafruit:
