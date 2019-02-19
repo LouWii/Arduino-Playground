@@ -2,6 +2,10 @@
 
 To learn more on OLED display (how to wire it), check the [README](../Test-screen-SSD1306-128x64-adafruit/README.md) in the `Test-screen-SSD1306-128x64-adafruit` folder
 
+## Schema
+
+![Schema](../Test-screen-SSD1306-128x64-adafruit/schema.png)
+
 ## Code
 
 This test uses 2 libraries:

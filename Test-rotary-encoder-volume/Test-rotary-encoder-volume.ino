@@ -1,4 +1,4 @@
-// Requires Project-HID lib https://github.com/NicoHood/HID
+ // Requires Project-HID lib https://github.com/NicoHood/HID
 // Requires encoder lib https://www.pjrc.com/teensy/td_libs_Encoder.html
 
 #include <Encoder.h>
