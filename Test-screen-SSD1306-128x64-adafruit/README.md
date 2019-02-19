@@ -14,6 +14,8 @@ Make sure your screen accepts 5V (although they almost all accept 5V). If not, u
 
 ![Schema](schema.png)
 
+Note: The OLED screen is not present by default in Fritzing. Import it from the `oled_128x64_I2C_monochrome_display.fzpz` file in this directory.
+
 ## Code
 
 This test uses 2 libraries from Adafruit:
