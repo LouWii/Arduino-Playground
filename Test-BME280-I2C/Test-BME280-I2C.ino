@@ -1,3 +1,5 @@
+
+
 // Example based on BlueDot_BME280 example
 // You will need the BlueDot_BME280 library to run this demo
 
@@ -115,5 +117,8 @@ void loop() {
     Serial.println();
 
     delay(1000);
+  } else {
+    Serial.println(F("BME not detected"));
+    delay(2000);
   }
 }
