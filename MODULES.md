@@ -53,3 +53,11 @@ PCF8575 and PCF8575C are very similar. Not sure if libraries can be used for bot
 
 * [adafruit library for MCP23017](https://github.com/adafruit/Adafruit-MCP23017-Arduino-Library) - Requires [*Wire*](http://www.arduino.cc/en/Reference/Wire) library for I2C. Uses *4442 bytes* of program storage space
 * [arduino-mcp23017](https://github.com/blemasle/arduino-mcp23017) - Requires [*Wire*](http://www.arduino.cc/en/Reference/Wire) library for I2C. Uses *4458 bytes* of program storage space
+
+## SD Card reader
+
+I found 2 cheap SD card readers (one for SD, one for micro SD). They both connect via SPI.
+
+Arduino has a library included for SD card stuff ([Lib on Github](https://github.com/arduino-libraries/SD)).
+
+There's also [SdFat](https://github.com/greiman/SdFat) that seems nice. Not sure what the difference is between the 2, beside supporting soft SPI pins.
