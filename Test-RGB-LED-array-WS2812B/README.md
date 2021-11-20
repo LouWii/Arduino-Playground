@@ -4,7 +4,7 @@
 
 This is a rough diagram of how an array of WS2812B is wired. I bought a pre-assembled array of 8x8 = 64 LEDs, you can find various arrays of the same sort online.
 
-![Wiring diagram](schema.png)
+![Wiring diagram](schema.PNG)
 
 ## Code
 
