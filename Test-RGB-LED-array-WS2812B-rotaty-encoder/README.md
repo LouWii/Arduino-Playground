@@ -12,3 +12,5 @@ This code requires 2 libraries (both available in Arduino IDE library manager)
 
 * [FastLED](https://github.com/FastLED/FastLED)
 * ["Encoder" by Paul Stoffregen](https://www.pjrc.com/teensy/td_libs_Encoder.html)
+
+In the top of the file, you can change `SCRIPT_MODE` value to 0, 1 or 2 to use the rotary encoder to control different things.
