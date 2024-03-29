@@ -4,6 +4,10 @@ Generic LCD screen with controller found all over.
 
 Screen can handle 5v on VCC and backlight. BUT its control pins are built to handle 3.3v only. The Arduinos use 5v for digital signal, so we need to lower them down with 10k resistors (except MISO since it's sending from the screen to the Arduino).
 
+**Extra resources**
+* [Simple Circuit Blog Post](https://simple-circuit.com/interfacing-arduino-ili9341-tft-display/)
+* [educ8s blog post](https://educ8s.tv/arduino-2-8-ili9341-tutorial/)
+
 ## Schema
 
 ![Schema](schema.png)
